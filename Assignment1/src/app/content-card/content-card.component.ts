@@ -20,13 +20,13 @@ export class ContentCardComponent implements OnInit {
         body: 'first body'
     }
     second: Content = {
-        id: 0,
+        id: 1,
         author: 'steve',
         title: 'second',
         body: 'second body'
     }
     third: Content = {
-        id: 0,
+        id: 2,
         author: 'rob',
         title: 'third',
         body: 'third body'

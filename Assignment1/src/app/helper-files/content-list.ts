@@ -24,7 +24,7 @@ export class ContentList{
      }
 
      public getReaderFriendly(number: number){
-        return 'Id: ' + this._items[number].id +
+        return 'Id: ' + this._items[number].id
          + ' Author: ' + this._items[number].author
          + ' title: ' + this._items[number].title
          + ' body: ' + this._items[number].body

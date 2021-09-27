@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Content} from "../helper-files/content-interface";
 import {ContentList} from "../helper-files/content-list";
 import {first} from "rxjs/operators";
@@ -10,34 +10,17 @@ import {first} from "rxjs/operators";
 })
 export class ContentCardComponent implements OnInit {
 
-    list = new ContentList();
 
-
-    first: Content = {
-        id: 0,
-        author: 'adam',
-        title: 'first',
-        body: 'first body'
-    }
-    second: Content = {
-        id: 0,
-        author: 'steve',
-        title: 'second',
-        body: 'second body'
-    }
-    third: Content = {
-        id: 0,
-        author: 'rob',
-        title: 'third',
-        body: 'third body'
-    }
-
+    @Input() content: any;
     constructor() {
+ //       this.list = {
+   //         id: 0,
+   //         author: "Null",
+   //         title: "Null",
+   //         body: "Null"
+    //    };
     }
 
     ngOnInit(): void {
-        this.list.add(this.first);
-        this.list.add(this.second);
-        this.list.add(this.third);
     }
 }

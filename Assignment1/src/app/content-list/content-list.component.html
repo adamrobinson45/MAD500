@@ -1,1 +1,6 @@
-<app-content-card *ngFor="let item of contentList" [content]="item"></app-content-card>
+<form>
+    <label>Filter content by type:</label>
+    <input type="text" [(ngModel)] ="filterWord"/>
+    <button (click)="clickEvent(filterWord)">Submit</button>
+</form>
+<app-content-card *ngFor="let item of (contentList | contentType:filterWord)" [content]="item"></app-content-card>

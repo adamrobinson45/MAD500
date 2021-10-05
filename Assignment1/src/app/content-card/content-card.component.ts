@@ -11,14 +11,10 @@ import {first} from "rxjs/operators";
 export class ContentCardComponent implements OnInit {
 
 
+
     @Input() content: any;
     constructor() {
- //       this.list = {
-   //         id: 0,
-   //         author: "Null",
-   //         title: "Null",
-   //         body: "Null"
-    //    };
+
     }
 
     ngOnInit(): void {

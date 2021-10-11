@@ -10,13 +10,14 @@ import { FormsModule} from "@angular/forms";
   providers: [ContentTypePipe],
 })
 export class ContentListComponent implements OnInit {
-    public filterWord: any;
+    message: string;
 
   contentList: Content[] = [{
       id: 1,
       author: "Adam",
       title: "My first",
       body: "The first body",
+      imgUrl: 'https://nowthisiswhatiwouldcallmusic.files.wordpress.com/2015/06/1.png',
       type: "school"
   }, {
       id: 2,
@@ -45,12 +46,10 @@ export class ContentListComponent implements OnInit {
   }];
 
   constructor() {
-
+    this.message = "";
   }
 
   ngOnInit(): void {
   }
- clickEvent(filterWord: any): void{
-      this.filterWord = filterWord;
- }
+
 }

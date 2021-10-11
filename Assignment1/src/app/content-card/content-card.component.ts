@@ -10,13 +10,17 @@ import {first} from "rxjs/operators";
 })
 export class ContentCardComponent implements OnInit {
 
-
+    type = "";
 
     @Input() content: any;
     constructor() {
-
+        this.content= {};
     }
 
     ngOnInit(): void {
+    }
+
+    showId(): void {
+        console.log(this.content.id);
     }
 }

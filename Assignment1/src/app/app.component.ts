@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Assignment2';
+  title = 'Assignment4';
 
   public ngOnInit(): void{
 

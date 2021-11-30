@@ -1,0 +1,21 @@
+<p>content-detail works! </p>
+
+<div *ngIf="content.id != null">
+    <img class="poster-image" [src]="content.imgUrl">
+
+    <div class="name">
+        {{content.title}}
+    </div>
+
+    <div class="body">
+        {{content.body}}
+    </div>
+
+    <div class="name">
+        {{content.author}}
+    </div>
+
+</div>
+<div>
+    <button (click)="goBack()">Content List</button>
+</div>
